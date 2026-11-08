@@ -6,10 +6,10 @@ Repositori ini memuat implementasi tahap awal proyek Lab Pemrograman: konfiguras
 
 ## 1. Anggota Kelompok
 * **Lufthansa Daffa Gilbran Pambudi** (12010223140054)
-* **Ghiffari Muhammad**
-* **Farrel Eksa**
-* **Muhammad Indra**
-* **Nayla Raihanda**
+* **Ghiffari Muhammad** (12010223140015)
+* **Farrel Eksa** (12010223140014)
+* **Muhammad Indra** (12010223140067)
+* **Nayla Raihanda** (12010223140005)
 
 *Program Studi S1 Bisnis Digital, Fakultas Ekonomika dan Bisnis, Universitas Diponegoro*
 
