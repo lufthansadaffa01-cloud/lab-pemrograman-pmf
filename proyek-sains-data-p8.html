@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Lab Sains Data (P8): Dari Keputusan ke Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center text-white font-bold">P8</div>
+                <span class="font-bold text-lg tracking-tight text-slate-900">Lab Sains Data <span class="text-blue-700">FEB UNDIP</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+                <a href="#rencana-data" class="hover:text-blue-700 transition">1. Rencana Data</a>
+                <a href="#verifikasi-ai" class="hover:text-blue-700 transition">2. Verifikasi AI</a>
+                <a href="#readme-data" class="hover:text-blue-700 transition">3. README Data</a>
+                <a href="#eksplorasi-log" class="hover:text-blue-700 transition">4 & 5. Eksplorasi & Log</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-12 pb-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-700 text-xs font-bold tracking-wide uppercase mb-3 border border-blue-100">
+                S1 Bisnis Digital • Fakultas Ekonomika dan Bisnis Universitas Diponegoro
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+                Proyek Lab Sains Data (P8): <span class="text-blue-700">Dari Keputusan ke Data</span>
+            </h1>
+            <div class="grid sm:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="text-xs font-semibold text-slate-500 uppercase">Anggota 1</p>
+                    <p class="font-bold text-slate-900 mt-0.5">Lufthansa Daffa Gilbran</p>
+                    <p class="text-xs font-mono text-blue-700 mt-1">12010223140054</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="text-xs font-semibold text-slate-500 uppercase">Anggota 2</p>
+                    <p class="font-bold text-slate-900 mt-0.5">Ghiffari Muhammad</p>
+                    <p class="text-xs font-mono text-blue-700 mt-1">12010223140015</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p class="text-xs font-semibold text-slate-500 uppercase">Anggota 3</p>
+                    <p class="font-bold text-slate-900 mt-0.5">Muhammad Indra Mulya</p>
+                    <p class="text-xs font-mono text-blue-700 mt-1">12010223140067</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-20">
+
+        <section id="rencana-data" class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Bagian 01</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Lembar Rencana Data (1 Halaman)</h2>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                    LAMPU DATA: HIJAU
+                </span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse">
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700 w-56">KEPUTUSAN</th>
+                            <td class="py-3.5 px-4 text-slate-800">Tim produk memutuskan <strong>1 fitur prioritas</strong> untuk dibangun pada rilis aplikasi layanan/jasa kampus sebelum Pertemuan 12.</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">PILIHAN</th>
+                            <td class="py-3.5 px-4 text-slate-800">
+                                <span class="font-semibold text-blue-700">A</span> (Pelacakan status & kurir real-time)  | 
+                                <span class="font-semibold text-indigo-700">B</span> (Transparansi harga & garansi di muka)  | 
+                                <span class="font-semibold text-slate-700">C</span> (Tetap seperti sekarang via WhatsApp)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">ANGKA PEMBEDA</th>
+                            <td class="py-3.5 px-4 text-slate-800">Proporsi keluhan pengguna: persentase keluhan <em>"ketidakpastian waktu/pengiriman/status"</em> (dukung A) vs <em>"ketidakjelasan harga/kualitas"</em> (dukung B).</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">AMBANG</th>
+                            <td class="py-3.5 px-4 text-slate-800">Pilih <strong>A</strong> bila >35% ulasan negatif terkait waktu/status; pilih <strong>B</strong> bila >35% terkait harga/kualitas; pilih <strong>C</strong> bila total keduanya <15%.</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">DATA</th>
+                            <td class="py-3.5 px-4 text-slate-800">≥300 teks ulasan pelanggan berbahasa Indonesia (untuk memetakan topik keluhan & uji akurasi AI di P9).</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">SUMBER KANDIDAT</th>
+                            <td class="py-3.5 px-4 text-slate-800">(1) IndoNLU SmSA Dataset; (2) PRDECT-ID Mendeley Data; (3) YouTube Data API v3.</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">UBAH PILIHAN?</th>
+                            <td class="py-3.5 px-4 text-slate-800">
+                                <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded mr-1">YA</span> Proporsi topik keluhan  • 
+                                <span class="inline-block bg-rose-100 text-rose-800 text-xs font-bold px-2 py-0.5 rounded mr-1">TIDAK, DICORET</span> Data PDRB Jateng 10 tahun  • 
+                                <span class="inline-block bg-rose-100 text-rose-800 text-xs font-bold px-2 py-0.5 rounded mr-1">TIDAK, DICORET</span> Survei umum "suka aplikasi jasa?"
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">LAMPU DATA</th>
+                            <td class="py-3.5 px-4 text-emerald-800 font-medium">HIJAU — Dataset terbuka & sudah dianonimkan sesuai UU PDP No. 27 Tahun 2022.</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3.5 px-4 bg-slate-50 font-bold text-slate-700">JIKA TIDAK ADA</th>
+                            <td class="py-3.5 px-4 text-slate-800">Gunakan kombinasi dataset terbuka dari katalog NusaCrowd / IndoNLU dan PRDECT-ID.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="verifikasi-ai" class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Bagian 02</span>
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Verifikasi 5 Sumber Usulan AI (DeepSeek & Qwen)</h2>
+            <p class="text-sm text-slate-600 mb-6">Audit manual terhadap seluruh tautan, lisensi, dan ketersediaan dataset yang diusulkan LLM.</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 border-b border-slate-200 text-slate-700">
+                            <th class="py-3 px-4">No</th>
+                            <th class="py-3 px-4">Sumber Dataset / API</th>
+                            <th class="py-3 px-4">Tautan / DOI</th>
+                            <th class="py-3 px-4">Hasil Verifikasi</th>
+                            <th class="py-3 px-4">Keputusan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="py-3 px-4 font-bold">1</td>
+                            <td class="py-3 px-4 font-semibold">IndoNLU SmSA Dataset</td>
+                            <td class="py-3 px-4 font-mono text-xs text-slate-600">github.com/indobenchmark/indonlu</td>
+                            <td class="py-3 px-4">Status: Hijau, Tautan hidup</td>
+                            <td class="py-3 px-4"><span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">PAKAI</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-bold">2</td>
+                            <td class="py-3 px-4 font-semibold">PRDECT-ID Dataset</td>
+                            <td class="py-3 px-4 font-mono text-xs text-slate-600">doi:10.1016/j.dib.2022.108554</td>
+                            <td class="py-3 px-4">Status: Hijau, Lisensi CC BY 4.0</td>
+                            <td class="py-3 px-4"><span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">PAKAI</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-bold">3</td>
+                            <td class="py-3 px-4 font-semibold">YouTube Data API v3</td>
+                            <td class="py-3 px-4 font-mono text-xs text-slate-600">developers.google.com/youtube/v3</td>
+                            <td class="py-3 px-4">Status: Kuning ke Hijau (butuh API Key)</td>
+                            <td class="py-3 px-4"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded">PAKAI (Cadangan)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-bold">4</td>
+                            <td class="py-3 px-4 font-semibold">Statistik E-Commerce BPS</td>
+                            <td class="py-3 px-4 font-mono text-xs text-slate-600">bps.go.id</td>
+                            <td class="py-3 px-4">Status: Hijau, Tautan hanya beranda</td>
+                            <td class="py-3 px-4"><span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded">CEK DULU</span></td>
+                        </tr>
+                        <tr class="bg-rose-50/40">
+                            <td class="py-3 px-4 font-bold">5</td>
+                            <td class="py-3 px-4 font-semibold text-rose-900">Dataset Ulasan Jasa Kampus Kaggle 2025</td>
+                            <td class="py-3 px-4 font-mono text-xs text-rose-600">404 Not Found</td>
+                            <td class="py-3 px-4 text-rose-700 font-medium">Status: Merah (Halusinasi AI)</td>
+                            <td class="py-3 px-4"><span class="bg-rose-100 text-rose-800 text-xs font-bold px-2.5 py-1 rounded">TOLAK</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-5 p-4 bg-slate-900 text-slate-200 rounded-xl text-sm flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <span class="font-semibold text-white">Persentase Usulan AI yang Salah:</span>
+                <span><strong>20% ditolak mutlak</strong> (halusinasi tautan), <strong>20% perlu pencarian tabel manual</strong>.</span>
+            </div>
+        </section>
+
+        <section id="readme-data" class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Bagian 03</span>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Catatan Asal-Usul Data (<code class="text-blue-700 bg-blue-50 px-2 py-0.5 rounded text-lg">README_data</code>)</h2>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">SUMBER</p>
+                    <p class="font-semibold text-slate-900 mt-1">IndoNLU - SmSA</p>
+                    <p class="text-xs font-mono text-blue-700 break-all mt-1">https://github.com/indobenchmark/indonlu/tree/master/dataset/smsa_doc-sentiment-prosa</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">TANGGAL & CARA AMBIL</p>
+                    <p class="font-semibold text-slate-900 mt-1">7 November 2026</p>
+                    <p class="text-slate-600 mt-1">Unduh terprogram via Python (<code class="font-mono text-xs bg-slate-200 px-1.5 py-0.5 rounded">ambil_data.py</code>)</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">PARAMETER SAMPEL</p>
+                    <p class="text-slate-800 mt-1">Bahasa Indonesia; pemisah tab; sampel acak konsisten (<code class="font-mono text-xs bg-slate-200 px-1.5 py-0.5 rounded">n=350</code>, <code class="font-mono text-xs bg-slate-200 px-1.5 py-0.5 rounded">random_state=42</code>)</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">JUMLAH BARIS</p>
+                    <p class="text-slate-800 mt-1">Mentah total <strong>11.000 baris</strong> → Sampel bersih <strong>350 baris, 3 kolom</strong></p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">LISENSI / ATURAN</p>
+                    <p class="text-slate-800 mt-1">Open-source akademik (Wilie dkk., AACL-IJCNLP 2020)</p>
+                </div>
+                <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200">
+                    <p class="text-xs font-bold text-emerald-700 uppercase">ANONIMISASI</p>
+                    <p class="text-emerald-900 mt-1">Pre-processed + regex <code class="font-mono text-xs bg-emerald-100 px-1.5 py-0.5 rounded">@username</code> menjadi <code class="font-mono text-xs bg-emerald-100 px-1.5 py-0.5 rounded">[USER]</code> (<strong>Status: HIJAU</strong>)</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">AI YANG DIPAKAI & VALIDASI</p>
+                    <p class="text-slate-800 mt-1"><strong>AI:</strong> Gemini, DeepSeek, Qwen</p>
+                    <p class="text-slate-600 mt-1"><strong>Validasi:</strong> Diisi di P9 (uji 50 sampel manual vs label AI)</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p class="text-xs font-bold text-slate-500 uppercase">KETERBATASAN</p>
+                    <p class="text-slate-800 mt-1">Mencakup ulasan lintas layanan umum sehingga pada P9 akan diklasifikasikan ke topik spesifik.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="eksplorasi-log" class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Bagian 04</span>
+                <h2 class="text-xl font-bold text-slate-900 mb-4">Eksplorasi AI Video/Motion & AI Harness</h2>
+                <ul class="space-y-4 text-sm text-slate-700">
+                    <li class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Claude Motion / Remotion</strong>
+                        Pembuatan video/animasi presentasi data secara terprogram berbasis React.
+                    </li>
+                    <li class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Seedance & Sunra</strong>
+                        Eksplorasi workflow text-to-video generatif untuk aset visual studio AI.
+                    </li>
+                    <li class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">AI Harness</strong>
+                        Eksekusi skrip langsung di folder proyek lokal (<code class="font-mono text-xs bg-slate-200 px-1.5 py-0.5 rounded">INSTRUKSI_HARNESS.md</code> + <code class="font-mono text-xs bg-slate-200 px-1.5 py-0.5 rounded">ambil_data.py</code>).
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Bagian 05</span>
+                <h2 class="text-xl font-bold text-slate-900 mb-4">Log Penggunaan AI</h2>
+                <div class="space-y-4 text-sm text-slate-700">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="font-bold text-slate-900">DeepSeek & Qwen</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Audit Manual</span>
+                        </div>
+                        <p>Mencari 5 sumber data ulasan Indonesia → Diperiksa manual, 1 tautan 404 ditolak.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="font-bold text-slate-900">Gemini</span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Terverifikasi</span>
+                        </div>
+                        <p>Menyusun Lembar Rencana Data & skrip pengambil sampel 350 baris → Diverifikasi jumlah baris CSV.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center text-xs">
+        <p>Proyek Lab Sains Data (P8) • S1 Bisnis Digital FEB Universitas Diponegoro • 2026</p>
+    </footer>
+
+</body>
+</html>
